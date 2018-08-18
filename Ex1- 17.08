@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int encontre_maior(int v[], int n){
+    int Maior=0;
+    for(int o=0; o<n; o++){
+        if(v[o]>Maior){
+            Maior=v[o];
+        }
+    }
+    return Maior;
+}
+
+
+int main()
+    int n[10];
+    int O_Maior;
+
+        for(int p=0; p<10; p++){
+        printf("Coloca um Nº, Bro:");
+        scanf("%d", &n[p]);
+    }
+    O_Maior = encontre_maior(n,10);
+    printf("O Maior:%d",O_Maior);
+    return 0;
+}

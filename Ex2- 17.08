@@ -1,0 +1,37 @@
+#include <stdio.h>
+void indice(int v[],int n);
+void Pares(int v[],int n);
+void Leia(int v[], int n);
+
+int main(){
+    int v[10];
+    Leia(v,10);
+    Pares(v,10);
+    indice(v,10);
+
+return 0;
+}
+
+void Pares(int v[],int n){
+    for(int i; i<n; i++){
+        if(v[i]%2==0){
+            printf(" %d ", v[i]);
+        }
+    }
+    
+}
+
+void indice(int v[],int n){
+        for(int j=0; j<n; j+=2){
+            printf(" %d ", v[j]);
+        }
+    }
+    
+
+void Leia(int v[], int n){
+    for(int k=0; k<10; k++){
+        printf("Coloca os N°, Bro:");
+        scanf(" %d ",&v[k]);
+    }
+
+}

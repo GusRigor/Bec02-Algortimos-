@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.io>
+#include<stdlib.h>
 
 int Invert_Vet(int A[], int n){
     int i, j, troca;
